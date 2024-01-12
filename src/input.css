@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    * {
+        border: 1px solid blue;
+    }
+} */
+
+@layer components {
+    .selectBox {
+        @apply w-full border border-l-0 rounded-r-md p-1 border-borderColor text-xs text-textDisabled tracking-wide;
+    }
+
+    .labelBox {
+        @apply border border-borderColor rounded-l-md p-2 bg-bgSecondary
+    }
+}
+
+/* @layer utilities {
+    .background-kereta {
+        background-image: url('./assets/img/bg-kereta.jpg')
+    }
+} */

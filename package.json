@@ -1,0 +1,16 @@
+{
+  "name": "sim-k-mission-project",
+  "version": "1.0.0",
+  "description": "Project untuk sim-k",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "author": "Fariz R.B.",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "tailwindcss": "^3.4.1"
+  }
+}

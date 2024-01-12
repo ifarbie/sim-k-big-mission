@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM-K Project</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-montserrat bg-white">
+    <!-- HEADER -->
+    <header class="z-10 h-[10vh] shadow-lg">
+        <nav class="size-full px-3 sm:px-6 md:px-16 flex justify-center">
+            <div class="container flex items-center justify-between">
+                <a href="" class="">
+                    <img src="./assets/img/logo.svg" alt="Logo" class="w-20 sm:w-32 md:w-36">
+                </a>
+                <a href="./about.html" class="md:hidden">
+                    <img src="./assets/img/hamburger-menu.svg" alt="Hamburger Menu">
+                </a>
+                <div class="hidden md:flex md:items-center md:justify-evenly md:gap-5 md:font-roboto md:text-base lg:gap-9">
+                    <div>
+                        <a href="" class="font-medium text-textPrimary transition-all hover:text-hover sm:text-sm md:text-base">Pesan
+                            Tiket</a>
+                    </div>
+                    <div>
+                        <a href="./about.html"
+                            class="font-medium text-textPrimary transition-all hover:text-hover sm:text-sm md:text-base">About</a>
+                    </div>
+                    <div class="md:size-10 rounded-full bg-[url(../assets/img/avatar-rounded.svg)]">
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <section class="md:flex md:w-full md:h-[90vh]">
+        <section class="hidden md:w-3/4 md:bg-center md:bg-cover md:flex md:items-end md:relative">
+            <div class="size-full md:brightness-50">
+                <img class="h-full w-full object-cover" src="./assets/img/bg-kereta-nonedit.svg" alt="">
+            </div>
+            <div class="md:flex md:items-center md:gap-2 lg:gap-3 md:absolute md:p-6">
+                <div class="md:size-10 lg:size-12 md:rounded-lg md:bg-slate-700 md:flex">
+                    <img src="./assets/img/location.svg" alt="Location" class="md:m-auto md:w-3 lg:w-4">
+                </div>
+                <div class="md:text-white md:text-sm lg:text-base">
+                    <h5 class="md:font-bold ">Stasiun Malang Kota Baru</h5>
+                    <p class=" ">Malang, Jawa Timur</p>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col h-[90vh] justify-between">
+            <!-- MAIN -->
+            <main class="font-roboto">
+                <section class="w-[85%] mx-auto text-center">
+                    <img src="./assets/img/logo.svg" alt="Logo" class="mx-auto w-44 my-6">
+                    <h2 class="font-bold text-sm mb-2 font-montserrat">Pesan Tiket Kereta Online</h2>
+                    <p class="text-xs mb-4">Cari, Pesan, dan Nikmati Tiket Kereta dengan Mudah dan Cepat</p>
+                    <form action="">
+                        <div class="flex mb-2.5">
+                            <label for="firstStation" class="labelBox">
+                                <img src="./assets/img/kereta.svg" width="14px">
+                            </label>
+                            <select name="firstStation" class="selectBox">
+                                <option selected>Stasiun Awal</option>
+                            </select>
+                        </div>
+                        <div class="flex mb-2.5">
+                            <label for="endStation" class="labelBox">
+                                <img src="./assets/img/kereta.svg" width="14px">
+                            </label>
+                            <select name="endStation" class="selectBox">
+                                <option selected>Stasiun Tujuan</option>
+                            </select>
+                        </div>
+                        <div class="flex mb-2.5">
+                            <label for="date" class="labelBox">
+                                <img src="./assets/img/jadwal.svg" width="14px">
+                            </label>
+                            <select name="date" class="selectBox">
+                                <option selected>Tanggal Keberangkatan</option>
+                            </select>
+                        </div>
+                        <div class="flex mb-2.5">
+                            <label for="passanger" class="labelBox">
+                                <img src="./assets/img/penumpang.svg" width="14px">
+                            </label>
+                            <select name="passanger" class="selectBox">
+                                <option selected>Jumlah Penumpang</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Cari Kereta"
+                            class="border border-primary w-full rounded-md mb-2.5 bg-primary text-white p-2 text-sm cursor-pointer font-medium hover:bg-white hover:text-primary transition-all ">
+                        <button
+                            class="border w-full rounded-md mb-2.5 bg-[#C5E0F7] text-primary p-2 text-sm cursor-pointer font-semibold hover:bg-white hover:text-[#C5E0F7] hover:border-[#C5E0F7] transition-all">Cek
+                            Kode Booking</button>
+                    </form>
+                </section>
+            </main>
+            <!-- END MAIN -->
+
+            <!-- FOOTER -->
+            <footer class="w-full my-3">
+                <p class="text-center text-[10px]">&copy; 2023 PT. Tiket Kereta Api. All Rights Reserved</p>
+            </footer>
+            <!-- END FOOTER -->
+        </section>
+    </section>
+</body>
+
+</html>
